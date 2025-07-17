@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/public/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <div class="weather-main">
+            <div class="search-city">
+                <div class="date-hour-wrapper">
+                    <h1 style="font-weight: 200;">Weather</h1>
+                    <div class="date-wrapper">
+                        <h4 id="date" style="font-weight: 400;"></h4>
+                    </div>
+                    <div class="hour-wrapper">
+                        <h4 id="hour" style="font-weight: 100;"></h4>
+                    </div>
+                </div>
+                <div class="searching">
+                    <div class="buttons">
+                        <button id="search">
+                            <span class="material-symbols-outlined">search</span>
+                        </button>
+                        <input type="text" id="city" placeholder="Ciudad" autocomplete="off">
+                    </div>
+                    <div class="data">
+                        <ul id="cities-auto"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="response" style="flex-grow: 1;">
+                <div class="principal-data">
+                    <div class="weather-icon">
+                        <img id="weather-img">
+                    </div>
+                    <div class="temp-wrapper">
+                        <h2 id="temp" style="font-weight: 700; font-size: 8rem; color: var(--color1);"></h2>
+                    </div>
+                    <div class="weather-city-wrapper">
+                        <div class="city-wrapper">
+                            <span class="material-symbols-outlined" style="font-size: 3rem;">location_on</span>
+                            <h3 id="place" style="font-weight: 700; font-size: 3rem;"></h3>
+                        </div>
+                        <div id="separator"></div>
+                        <div class="weather-wrapper"
+                            style="display: flex; justify-content: center; align-items: center;">
+                            <h3 id="weather" style="font-weight: 300;"></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondary-data">
+                    <div class="humidity-wrapper" style="display: flex; justify-content: center; align-items: center;">
+                        <span class="material-symbols-outlined" style="font-size: 3rem;">humidity_percentage</span>
+                        <h4 id="humidity" style="font-weight: lighter;"></h4>
+                    </div>
+                    <div class="temperatures-wrapper">
+                        <div class="temp-max-wrapper">
+                            <span class="material-symbols-outlined" style="font-size: 3rem;">thermometer_add</span>
+                            <h4 id="temp-max" style="font-weight: lighter;"></h4>
+                        </div>
+                        <div class="temp-min-wrapper">
+                            <span class="material-symbols-outlined"
+                                style="font-size: 3rem; font-weight: 100;">thermometer_minus</span>
+                            <h4 id="temp-min" style="font-weight: lighter;"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p style="font-size: 16px; font-weight: 100;">Thanks to: <a href="https://openweathermap.org/"
+                    target="_blank">https://openweathermap.org/</a></p>
+        </footer>
+    </div>
+
+    <dialog>
+        <div class="dialog-wrapper">
+            <h2 style="font-weight: 700; font-size: 3rem;">Cookies and Geolocation Notice</h2>
+            <p style="font-weight: 100; font-size: 24px;">To provide you with accurate and relevant weather information,
+                this website uses cookies and requests your geolocation. Your current location allows us to show you the
+                weather in your area, personalizing your experience.
+                <br><br>
+                By clicking "Accept" or continuing to browse, you consent to the use of cookies and the collection of
+                your geolocation for this purpose. You can change your preferences at any time through your browser
+                settings. See our Privacy and Cookie Policy for more details.
+            </p>
+            <div class="cookies-btns">
+                <button id="accept-cookies">Accept</button>
+                <button id="reject-cookies">Cancel</button>
+            </div>
+        </div>
+    </dialog>
+    <script src="index.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="lat-lon-wrapper">
+    <div class="latitude-wrapper">
+        <h5>Latitud:</h5>
+        <h5 id="lat"></h5>
+    </div>
+    <div class="longitude-wrapper">
+        <h5>Longitud:</h5>
+        <h5 id="lon"></h5>
+    </div>
+</div> -->

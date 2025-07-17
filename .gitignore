@@ -1,0 +1,5 @@
+#Ignore PDF
+.pdf
+
+#Ignore .txt
+.txt
