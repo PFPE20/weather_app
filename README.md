@@ -1,4 +1,4 @@
-#Welcome to my weather app.
-##I hope you like it.
-###Thanks to "openweathermap".
-###Contributions are welcome!
+#Welcome to my weather app. <br>
+##I hope you like it. <br>
+###Thanks to "openweathermap". <br>
+###Contributions are welcome! <br>
